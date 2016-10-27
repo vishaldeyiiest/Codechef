@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html class="js" lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script async="" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/4e7c8fce06a9ab05530008e5.js"></script><script src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/widgets.js" id="twitter-wjs"></script><script src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/fp.js" async=""></script><script src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/atrk.js" async="" type="text/javascript"></script><script src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/ga.js" async="" type="text/javascript"></script><script src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/sdk.js" id="facebook-jssdk"></script><script>
+    (function (_, e, rr, s) {
+      _errs = [s];
+      var c = _.onerror;
+      _.onerror = function () {
+        var a = arguments;
+        _errs.push(a);
+        c && c.apply(this, a)
+      };
+      var b = function () {
+        var c = e.createElement(rr), b = e.getElementsByTagName(rr)[0];
+        c.src = "//beacon.errorception.com/" + s + ".js";
+        c.async = !0;
+        b.parentNode.insertBefore(c, b)
+      };
+      _.addEventListener ? _.addEventListener("load", b, !1) : _.attachEvent("onload", b)
+    })
+    (window, document, "script", "4e7c8fce06a9ab05530008e5");
+  </script>
+
+  <link rel="dns-prefetch" href="https://codechef_shared.s3.amazonaws.com/">
+  <link rel="dns-prefetch" href="https://beacon.errorception.com/">
+  <link rel="dns-prefetch" href="https://static.ak.facebook.com/">
+  <link rel="dns-prefetch" href="https://fbcdn-profile-a.akamaihd.net/">
+  <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+  <title>Chefland and Electricity | CodeChef</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+  <link rel="shortcut icon" href="https://www.codechef.com/misc/favicon.ico" type="image/x-icon">
+  <link type="text/css" rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/todo_notification.css">
+  <link type="text/css" rel="stylesheet" media="all" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/main.css">
+  <link rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/autocomplete.css">
+  <link rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/datatable.css">
+  <link rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/font-awesome.css">
+  <link rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/comment.css">
+  <link rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/register.css">
+  <link rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/complete_registration.css">
+  <script src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/platform.js" async="" defer="defer" gapi_processed="true"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/aes.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/jquery_002.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/localStorage.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/todo_notification.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/moment.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/marked.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/common.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/handlebars.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/prod.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/autocomplete.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/datatable.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/comment.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/drupal.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/popupoverlay.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/keybinding.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/codechefGenericModal.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/fb_sdk.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/codechef_common_functions.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/nice_menus.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/jquery_003.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/jquery.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/tableofcontents.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/common_002.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/contest_page.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/jquery-ui-1.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/problemstatus.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/contest.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/jquery_005.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/form.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/notifications.js"></script>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/todo-widget.js"></script>
+  <link type="text/css" rel="stylesheet" media="all" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/jquery.css">
+  <link type="text/css" rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/style.css">
+  <link type="text/css" rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/new-login-bar.css">
+  <link type="text/css" rel="stylesheet" href="Chefland%20and%20Electricity%20%7C%20CodeChef_files/github-markdown.css">
+  <style>
+
+    :root {
+      font-size: 62.5%;
+    }
+
+    .ccl-su-img-social-disconnect {
+      -webkit-filter: grayscale(95%);
+      -moz-filter: grayscale(95%);
+      -o-filter: grayscale(95%);
+      -ms-filter: grayscale(95%);
+      filter: grayscale(95%);
+    }
+
+    .ccl-su-img-social-connect {
+      -webkit-filter: grayscale(35%);
+      -moz-filter: grayscale(35%);
+      -o-filter: grayscale(35%);
+      -ms-filter: grayscale(35%);
+      filter: grayscale(35%);
+    }
+
+    .ccl-su-img-social:hover {
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+
+    .ccl-su-img-social-small {
+      width: 3rem;
+    }
+
+    .ccl-su-img-social-mini {
+      width: 1rem;
+    }
+
+    .ccl-su-img-social-medium {
+      width: 5rem;
+    }
+
+    .ccl-su-img-social-large {
+      width: 7rem;
+    }
+
+    .oauth-buttons-header {
+      position: relative;
+      top: -0.5rem;
+    }
+
+    .oauth-button {
+      pading: 0;
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+
+    .oauth-button-small {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 0.6rem;
+      margin-left: 0.6rem;
+    }
+
+    .oauth-button-medium {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+
+    .oauth-button-large {
+      width: 7rem;
+      height: 7rem;
+      margin-right: 1.4rem;
+      margin-left: 1.4rem;
+    }
+
+    .oauth-button-mini {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.2rem;
+      margin-left: 0.2rem;
+    }
+
+    /*this is to avoid padding and border of button in firefox*/
+    .oauth-button::-moz-focus-inner {
+      padding: 0;
+      border: 0
+    }
+
+
+  </style>
+  <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/jquery_004.js"></script>
+<script src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/hotjar-167687.js" async=""></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><script src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/button.js" async="" charset="utf-8" type="text/javascript"></script></head>
+<body class="sidebar-right">
+  <center>
+    <div style="display: none;" id="ember-root-shadow" class="ember-application">
+      <div class="ember-view">
+        <div id="header" class="wrapper">
+          <div class="inner-wrapper">
+            <!-- Header -->
+            <div id="logo-floater" class="cols-2">
+              <a href="https://www.codechef.com/" title=""><img src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo"><span></span></a>
+              </div>
+              <div class="cols-2">
+                <div id="custom-login">
+                  <!--Hello <strong>Admin</strong>, Check your <strong><a href="">Account</a></strong> or <a href="/logout">Log Out</a>-->
+
+                  <img style="position: relative;top: -64px;" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/Loader-Username.gif">
+
+                </div>
+
+
+                <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+                  <div class="content">
+                    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- /HEADER -->
+          <!-- BEGIN: CONTENT -->
+          <table id="maintable" class="maintable" cellpadding="10" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="content" width="99%">
+                  <div class="wrapper" id="content-regions">
+                    <img id="content-loader-gif" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/Problem-Page.gif">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+      <div class="ember-application" id="ember-root">
+        
+          
+          
+          
+          
+        
+        <div class="ember-view" id="ember242">
+
+
+          <div class="header-container">
+            <div id="header" class="wrapper">
+              <div class="inner-wrapper">
+                <!-- Header -->
+                <div id="logo-floater" class="cols-2">
+                  <a href="https://www.codechef.com/" title=""><img src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo"><span></span></a></div>
+                    <div class="cols-2">
+                      <div id="custom-login">
+                        
+                        <li class="loggedin-user">
+                          <span class="left">
+                            <a href="https://www.codechef.com/users/vishal_iiest"><div class="picture"><img src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/user_default_thumb.jpg" height="30px" width="30px"></div> </a>
+                          </span>
+
+                          <span class="right">
+                            Hello <a>vishal_iiest</a><a href="#" class="toggle-dropdown"></a>
+                            <ul class="user-dropdown" style="display: none;">
+                              <span class="caret"></span>
+                              <li><a href="https://www.codechef.com/users/vishal_iiest">Account</a></li>
+                              <li><a href="https://www.codechef.com/user/757474/edit">Edit Profile</a></li>
+                              <li><a href="https://www.codechef.com/todos">Todo</a></li>
+                              <li><a href="https://www.codechef.com/sets">My Sets</a></li>
+                              
+                              <li><a href="https://www.codechef.com/users/vishal_iiest/teams">My Teams</a></li>
+                              <li><a href="https://www.codechef.com/teams/invites">Team Invites</a></li>
+                              
+                              <li><a href="https://www.codechef.com/referral">Referrals</a></li>
+                            </ul>
+                          </span>
+                        </li>
+                        <li class="todo-section notification-box-todo" title="My Todo List">
+                          <i></i>
+                          <span class="notification-counter">11</span>
+                          <span class="notification-listbox"></span>
+                        </li>
+                        
+                       <div id="facebook-login">
+                        <div id="oauth-buttons" class="oauth-buttons-header">
+                          <button class="oauth-button oauth-button-small" style="text-decoration: none;" title="Google Disconnect" id="button_google" onclick="disconnectOauth(event,'google')"><img class="ccl-su-img-social-disconnect ccl-su-img-social ccl-su-img-social-small" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/google.png">  </button><button class="oauth-button oauth-button-small" style="text-decoration: none;" title="Github Connect" id="button_github" onclick="clearUserCache(); window.location='/OAuth/github?state=initiate';"><img class="ccl-su-img-social-connect ccl-su-img-social ccl-su-img-social-small" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/github.png">  </button><button class="oauth-button oauth-button-small" style="text-decoration: none;" title="Facebook Connect" id="button_facebook" onclick="clearUserCache(); window.location='/fb/auth?src=';"><img class="ccl-su-img-social-connect ccl-su-img-social ccl-su-img-social-small" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/facebook.png">  </button>
+                        </div>
+                      </div>
+                      
+                      <a href="https://www.codechef.com/logout" class="button grey logout-link">Logout</a>
+                      
+                    </div>
+
+
+                    <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+                      <div class="content">
+                        <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>
+                        
+                        <ul class="nice-menu nice-menu-down" id="nice-menu-0"><li id="menu-302" class="menuparent menu-path-problems-school"><a href="https://www.codechef.com/problems/school" title="">PRACTICE</a><ul><li id="menu-5215" class="menu-path-ide"><a href="https://www.codechef.com/ide" title="">Code, Compile &amp; Run</a></li>
+<li id="menu-2602" class="menu-path-problems-school"><a href="https://www.codechef.com/problems/school" title="">Beginner</a></li>
+<li id="menu-303" class="menu-path-problems-easy"><a href="https://www.codechef.com/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="https://www.codechef.com/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="https://www.codechef.com/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="https://www.codechef.com/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="https://www.codechef.com/problems/extcontest" title="">Peer</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="https://www.codechef.com/contests" title="">COMPETE</a><ul><li id="menu-2203" class="menu-path-www.codechef.com-contests"><a href="http://www.codechef.com/contests" title="">All Contests</a></li>
+<li id="menu-5728" class="menu-path-https--www.codechef.com-SNCKFL16"><a href="https://www.codechef.com/SNCKFL16" title="">SnackDown Onsite Final Round</a></li>
+<li id="menu-5225" class="menu-path-www.codechef.com-JULY16"><a href="http://www.codechef.com/JULY16" title="">July Challenge 2016</a></li>
+<li id="menu-5679" class="menu-path-www.codechef.com-COOK72"><a href="http://www.codechef.com/COOK72" title="">July Cook-Off 2016</a></li>
+<li id="menu-5224" class="menu-path-www.codechef.com-LTIME38"><a href="http://www.codechef.com/LTIME38" title="">July Lunchtime 2016</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-920" class="menu-path-wiki-"><a href="https://www.codechef.com/wiki/" title="">Wiki</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef"><a href="https://www.facebook.com/CodeChef" title="">Facebook</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="https://www.codechef.com/community" title="">COMMUNITY</a><ul><li id="menu-733" class="menu-path-www.codechef.com-hostyourcontest"><a href="http://www.codechef.com/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-2310" class="menu-path-www.codechef.com-goforgold"><a href="http://www.codechef.com/goforgold" title="">Go for Gold</a></li>
+<li id="menu-3830" class="menu-path-www.codechef.com-campus_chapter-about"><a href="http://www.codechef.com/campus_chapter/about" title="">Campus Chapter</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="https://www.codechef.com/help" title="">HELP</a><ul><li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-www.codechef.com-problemsetting"><a href="http://www.codechef.com/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+<li id="menu-2200" class="menu-path-www.codechef.com-long-ranklist-AX"><a href="http://www.codechef.com/long/ranklist/AX" title="Long contest rankings list">Long Contest Ranks</a></li>
+<li id="menu-2199" class="menu-path-www.codechef.com-short-ranklist-AX"><a href="http://www.codechef.com/short/ranklist/AX" title="Short contest rankings list">Short Contest Ranks</a></li>
+<li id="menu-4881" class="menu-path-www.codechef.com-ltime-all-ranklist-AX"><a href="http://www.codechef.com/ltime/all/ranklist/AX" title="">Lunchtime Ranks (all)</a></li>
+<li id="menu-4882" class="menu-path-www.codechef.com-ltime-school-ranklist-AX"><a href="http://www.codechef.com/ltime/school/ranklist/AX" title="">Lunchtime Ranks (school)</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="https://www.codechef.com/event-calendar" title="Event Calendar">Event Calendar</a></li>
+<li id="menu-2372" class="menu-path-discuss.codechef.com-top-users-"><a href="http://discuss.codechef.com/top/users/" title="">Top Contributors on Discuss</a></li>
+</ul>
+</li>
+<li id="menu-5681" class="menuparent menu-path-node-6479484"><a href="https://www.codechef.com/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-www.codechef.com-aboutus"><a href="http://www.codechef.com/aboutus" title="">About CodeChef</a></li>
+<li id="menu-849" class="menu-path-www.codechef.com-team"><a href="http://www.codechef.com/team" title="Team CodeChef">Team CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="https://www.codechef.com/press" title="Press Room">Press Room</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="https://www.codechef.com/ceoscorner" title="CEO's Corner">CEO's Corner</a></li>
+<li id="menu-1858" class="menu-path-www.codechef.com-contactus"><a href="http://www.codechef.com/contactus" title="">Contact Us</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div><div style="cursor: pointer;" class="snackdown-bar">
+    <a href="https://www.codechef.com/snackdown/2016?utm_source=homebar&amp;utm_medium=banner&amp;utm_campaign=sd" class="logo"><img src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/snackdownbar-logo.png" alt="CodeChef SnackDown 2016"></a>
+
+<ul>
+  <li></li>
+  <li>
+    Join the <em>Onsite Finale Mirror</em> contest on
+    <span class="text-large">09</span>
+    <span class="date">Jul, SAT</span>
+    <span class="time">12:00 <span class="x-small">AM IST</span></span>
+  </li>
+  <li><span class="text-light">Duration:</span> <span class="text-big">5 hrs</span></li>
+  <ul class="timer">
+    <li><span id="s-clock-day-left">3</span>Days</li>
+    <li><span id="s-clock-hrs-left">13</span>Hrs</li>
+    <li><span id="s-clock-min-left">44</span>Min</li>
+    <li><span id="s-clock-sec-left">50</span>Sec</li>
+  </ul>
+</ul>
+  <span class="refer">
+    <a href="#">Register Now</a>
+  </span>
+</div>
+            <div class="ember-view" id="ember249">
+          <!-- /HEADER -->
+          <!-- BEGIN: CONTENT -->
+          <table id="maintable" class="maintable" cellpadding="10" cellspacing="0">
+            <tbody><tr>
+              <td class="content" width="99%">
+                <div class="wrapper" id="content-regions">
+                  
+                  <div class="outer-box-problems">
+                    <div id="breadcrumbs">
+                      <a href="https://www.codechef.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.codechef.com/contests/">Compete</a>&nbsp;»&nbsp;<a href="https://www.codechef.com/JULY16" class="ember-view" id="ember281">July Challenge 2016</a>
+                      &nbsp;»&nbsp;Chefland and Electricity
+                    </div>
+                    <div id="main-content-problem" class="box-white">
+                      <table id="problem-page-top">
+                        <tbody><tr><td width="55%">
+                          <h1 class="title">Chefland and Electricity
+                            <div style="display:inline-block;">
+                              
+                              <div class="todo-widget" style="visibility: visible; position: relative;top: 5px;"><input style="outline: none;" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/add1.png" title="Add problem to Todo list" class="todo-button" problem="CHEFELEC" contest="JULY16" height="25" type="image" width="25"><div class="todo-button-message"></div></div>
+                              
+                            </div>
+                          </h1>
+                          <div style="padding:0; overflow:hidden; margin-bottom:5px;">
+                            <div style="float:left; margin:3px 10px 0 0;">Problem code: <span id="problem-code">CHEFELEC</span></div>
+                            </div>
+                            
+                            <div class="social-button-container cc-visible" data-bindattr-270="270">
+                              <div class="social-button">
+                                <div style="width: 80px; height: 20px;margin-top: -2px;"><iframe src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/tweet_button.html" title="Twitter Tweet Button" style="position: static; visibility: visible; width: 60px; height: 20px;" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0"></iframe></div>
+                                </div>
+                                <div class="social-button">
+                                  <div fb-iframe-plugin-query="action=like&amp;app_id=191217060453&amp;container_width=0&amp;href=https%3A%2F%2Fwww.codechef.com%2FJULY16%2Fproblems%2FCHEFELEC&amp;layout=standard&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;width=370px" fb-xfbml-state="rendered" class="fb-like fb_iframe_widget" data-width="370px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"><span style="vertical-align: bottom; width: 370px; height: 20px;"><iframe class="" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/like.html" style="border: medium none; visibility: visible; width: 370px; height: 20px;" title="fb:like Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fa85b8984c2608" frameborder="0" height="1000px" width="370pxpx"></iframe></span></div>
+                                </div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </td>
+                            <td width="45%">
+                              <ul class="button-list">
+                                
+                                
+                                <li><a class="button" href="https://www.codechef.com/JULY16/submit/CHEFELEC" data-bindattr-312="312">Submit</a></li>
+                                
+                                <li><a class="button" href="https://www.codechef.com/JULY16/status/CHEFELEC,vishal_iiest" data-bindattr-311="311">My Submissions</a>
+                                </li>
+                                
+                                <li><a class="button" href="https://www.codechef.com/JULY16/status/CHEFELEC" data-bindattr-271="271">All Submissions</a></li>
+                                
+                              </ul>
+                            </td>
+                          </tr></tbody></table>
+                          <div id="problem-page-complete">
+                            <div id="problem-left">
+                              
+                              <div class="content"><h3> Read problems statements in <a target="_blank" href="http://www.codechef.com/download/translated/JULY16/mandarin/CHEFELEC.pdf">Mandarin Chinese</a>, <a target="_blank" href="http://www.codechef.com/download/translated/JULY16/russian/CHEFELEC.pdf">Russian</a> and <a target="_blank" href="http://www.codechef.com/download/translated/JULY16/vietnamese/CHEFELEC.pdf">Vietnamese</a> as well.</h3>
+<p>There are <b>n</b> villages in a Chefland. Some of the villages have 
+electricity facilities, other doesn't. You can consider the villages 
+arranged in line in the order <b>1</b> to <b>n</b> from left to right. i-th of village can be considered at <b>x<sub>i</sub></b> coordinates.</p>
+<p>
+Chef decided that electricity should be provided to all the villages. 
+So, he decides to buy some amount of electric wires to connect the 
+villeges without electricity to some villages with electricity. As Chef 
+does not want to spend too much amount of money on wires, can you find 
+out minimum amount of length of wire Chef should buy.
+</p>
+<h3>Input</h3>
+<p>First line of the input contains an integer <b>T</b> denoting the number of test cases. <b>T</b> test cases follow.</p>
+<p>First line of each test case contains an integer <b>n</b> denoting number of villages in Chefland.</p>
+<p>Second line will contain a string of length <b>n</b> containing '0' or '1's only. If i-th character of the string is '1', then it denotes that i-th village has electricity.</p>
+<p>Next line contains <b>n</b> space separated integers denoting the <b>x</b> coordinates of the villages in the order from village <b>1</b> to n</p>
+<h3>Output</h3>
+<p>For each test case, output a single line containing a integer corresponding to the minimum length of wire Chef needs to buy.</p>
+<h3>Constraints</h3>
+<ul>
+<li><b>1 ≤ T ≤ 10</b></li>
+<li>It is guaranteed that there will be at least one village which will have electricity.</li>
+<li><b>1 ≤ x<sub>1</sub> &lt;  x<sub>2</sub> &lt;  ... &lt; x<sub>n</sub> ≤ 10<sup>9</sup></b></li>
+</ul>
+<h3>Subtasks</h3>
+<p>
+<b>Subtask #1 : 30 points</b></p>
+<ul>
+<li><b>1 ≤ N ≤ 1000</b></li>
+</ul>
+
+<p>
+<b>Subtask #2 : 70 points</b></p>
+<ul>
+<li><b>1 ≤ N ≤ 10<sup>5</sup></b></li>
+</ul>
+
+<h3>Example</h3>
+<pre><b>Input</b>
+2
+2
+01
+1 2
+3
+100
+1 5 6
+<b>Output:</b>
+1
+5
+</pre><h3>Explanation</h3>
+<p><b>In the first example</b>, first village does not have electricity.
+ If we put a wire between village 1 and 2 of length 1, then both the 
+villages will have electricity.
+</p>
+<p><b>In the second example</b>,<br>
+We can a draw a wire from first village to third village, passing 
+through second village. Its total length will be 5. Now all the villages
+ will have electricity. This is the minimum length of wire you will 
+require.
+</p>
+
+                                
+                                <hr>
+                                <table align="left" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    
+                                    <tr>
+                                      <td width="14%">Author:</td>
+                                      <td>
+                                        <a href="https://www.codechef.com/users/admin2" data-bindattr-318="318">admin2</a>
+                                      </td>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Tester:</td>
+                                      <td>
+                                        <a href="https://www.codechef.com/users/mugurelionut" data-bindattr-320="320">mugurelionut</a>
+                                      </td>
+                                    </tr>
+                                    
+                                    
+                                    
+                                    
+                                    <tr>
+                                      <td width="14%">Date Added:</td>
+                                      <td>5-06-2016</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                      <td width="14%">Time Limit:</td>
+                                      <td>1 sec</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="14%">Source Limit:</td>
+                                      <td>50000 Bytes</td>
+                                    </tr>
+                                    <tr>
+                                      <td width="14%">Languages:</td>
+                                      <td>ADA, ASM, BASH, BF, C, C99 
+strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, 
+FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, 
+NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY,
+ PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, 
+TCL, TEXT, WSPC</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <ul class="button-list bottom-bttn">
+                                <input value="value" data-bindattr-317="317" type="hidden">
+                                
+                                <li><a class="button" href="https://www.codechef.com/JULY16/submit/CHEFELEC" data-bindattr-323="323">Submit</a></li>
+                                
+                              </ul>
+                              
+
+                            </div>
+                            <div id="problem-right">
+                              <div id="sidebar-problem">
+                                <div id="success-submissions">
+                                  
+                                  <div data-ember-action="324">
+                                  <h3>SUCCESSFUL SUBMISSIONS
+                                    <button class="toogle-button fa fa-plus-square-o"></button>
+                                  </h3>
+                                </div>
+                                
+                                <div id="rankContentDiv"></div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <hr>
+                        <div id="problem-comments">
+                          
+                          <div class="ember-view" id="ember337"><section class="cc-comments-section"><div class="comment-topmost-header"><h2 class="noselect cc-comments-title" data-ember-action="338">Comments <i class="fa fa-caret-right"></i></h2></div></section></div>
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+                </td>
+              </tr>
+            </tbody></table>
+          </div>
+          </div></div>
+        <div class="footer-container">
+          <div id="footer" class="wrapper">
+            <!--<div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>-->
+            <script type="text/javascript">
+              String.prototype.capitalize = function () {
+                return this.charAt(0).toUpperCase() + this.slice(1);
+              };
+
+              disconnectOauth = function (event, account) {
+                if (event != undefined) {
+                  event.preventDefault();
+                }
+                var r = confirm("Are you sure you want to disconnect " + account.capitalize() + " account?");
+                if (r == true) {
+                  clearUserCache();
+                  $.ajax({
+                    url: '/OAuth/' + account,
+                    type: 'DELETE',
+                    success: function () {
+                      window.location.reload();
+                    },
+                    error: function () {
+                      invokeGenericModal({
+                        message: "Couldn't complete your request. Please try again.",
+                        id: account + '-error-message'
+                      });
+                    }
+                  });
+                }
+              };
+            </script>
+            <div class="content clear-block">
+              <!-- Footer Contents -->
+              <div id="block-block-13" class="block block-block block-header">
+                <div class="content">
+                  <script language="javascript" type="text/javascript">
+                    function formatTime(ts) {
+                      now = new Date(ts);
+
+                      localtime = new Date();
+                      hour = now.getHours();
+                      min = now.getMinutes();
+                      sec = now.getSeconds();
+
+                      if (min <= 9) {
+                        min = "0" + min;
+                      }
+                      if (sec <= 9) {
+                        sec = "0" + sec;
+                      }
+                      if (hour > 12) {
+                        hour = hour - 12;
+                        add = " PM";
+                      } else {
+                        hour = hour;
+                        add = " AM";
+                      }
+                      if (hour == 12) {
+                        add = " PM";
+                      }
+                      if (hour == 00) {
+                        hour = "12";
+                      }
+
+                      $('#server-time').html(((hour <= 9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+
+                      nextSec = (now.getTime() + 1000);
+
+                      setTimeout("formatTime(" + nextSec + ")", 1000);
+                    }
+                    function getDtTimeZone() {
+                      var rightNow = new Date();
+                      var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+                      var temp = toDay.toGMTString();
+                      var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") - 1));
+                      var stdTime = (toDay - date2) / (1000 * 60 * 60);
+                      return stdTime;
+                    }
+            /*var d=new Date();
+             $.ajax({
+             url: '/umtza',
+             type:'POST',
+             data: 'umtza='+d.toString(),
+             });
+             */
+           </script>
+           <div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+           <div class="inner-wrapper">
+            <div class="cols-2">
+              <div id="secondary-nav">
+                <ul>
+                  <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+                  <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+                  <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+                  <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+                  <li><a href="http://www.codechef.com/Programming-Languages">Programming
+                    Languages</a></li>
+                    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div id="copyright" class="cols-2">© 2009
+                  <a style="color: rgb(0, 0, 0);" href="http://www.directi.com/">Directi
+                  Group</a>
+                  . All Rights Reserved. CodeChef uses SPOJ © by
+                  <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com/">Sphere
+                  Research Labs</a>
+                </div>
+                <div id="copyright-msg">In order to report copyright violations of any kind, send in an
+                  email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></div>
+                </div>
+                <div class="cols-2-right" style="float:right;" align="right">
+                  <div id="sponsor-strip">
+                    <a target="_blank" href="http://www.directi.com/"><img style="width:120px" alt="CodeChef a product of Directi" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/directi-logo.png"></a><br>
+                      <span>The time now is: <span id="server-time">10:15:09 PM</span></span><br>
+                      <span>Your IP: <span id="client-ip">223.231.16.61</span></span>
+                    </div>
+                  </div>
+                </div>
+                <script type="text/javascript">
+
+                  var _gaq = _gaq || [];
+                  _gaq.push(['_setAccount', 'UA-53602-42']);
+                  _gaq.push(['_trackPageview']);
+
+                  (function () {
+                    var ga = document.createElement('script');
+                    ga.type = 'text/javascript';
+                    ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(ga, s);
+                  })();
+
+                </script>
+
+
+                <!-- Google Code for Visitors that do not sign-up Remarketing List -->
+                <script type="text/javascript">
+                  /* <![CDATA[ */
+                  var google_conversion_id = 1066618556;
+                  var google_conversion_language = "en";
+                  var google_conversion_format = "3";
+                  var google_conversion_color = "666666";
+                  var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+                  var google_conversion_value = 0;
+                  /* ]]> */
+                </script>
+                <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/conversion.js">
+                </script><img alt="" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/a.gif" border="0" height="1" width="1">
+                <noscript>
+                  <div style="display:inline;">
+                    <img height="1" width="1" style="border-style:none;" alt=""
+                    src="//www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;guid=ON&amp;script=0"/>
+                  </div>
+                </noscript>
+
+                <!-- Google Code for RM codechef Remarketing List -->
+                <script type="text/javascript">
+                  /* <![CDATA[ */
+                  var google_conversion_id = 968176136;
+                  var google_conversion_language = "en";
+                  var google_conversion_format = "3";
+                  var google_conversion_color = "ffffff";
+                  var google_conversion_label = "iDk7CPDZ7wMQiOTUzQM";
+                  var google_conversion_value = 0;
+                  /* ]]> */
+                </script>
+                <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/conversion.js">
+                </script><img alt="" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/a_002.gif" border="0" height="1" width="1">
+                <noscript>
+                  <div style="display:inline;">
+                    <img height="1" width="1" style="border-style:none;" alt=""
+                    src="//www.googleadservices.com/pagead/conversion/968176136/?label=iDk7CPDZ7wMQiOTUzQM&amp;guid=ON&amp;script=0"/>
+                  </div>
+                </noscript>
+
+                <!-- Google Code for Snackdown -->
+                <script type="text/javascript">
+                  /* <![CDATA[ */
+                  var google_conversion_id = 960072479;
+                  var google_custom_params = window.google_tag_params;
+                  var google_remarketing_only = true;
+                  /* ]]> */
+                </script>
+                <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/conversion.js">
+                </script><img alt="" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/a_003.html" border="0" height="1" width="1">
+                <noscript>
+                  <div style="display:inline;">
+                    <img height="1" width="1" style="border-style:none;" alt=""
+                    src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/960072479/?value=0&amp;guid=ON&amp;script=0"/>
+                  </div>
+                </noscript>
+
+
+                <!-- Google Code for .tech domain -->
+                <script type="text/javascript">
+                  /* <![CDATA[ */
+                  var google_conversion_id = 951716012;
+                  var google_conversion_label = "OiW5COr2yFsQrJHoxQM";
+                  var google_custom_params = window.google_tag_params;
+                  var google_remarketing_only = true;
+                  /* ]]> */
+                </script>
+                <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/conversion.js">
+                </script><img alt="" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/a_002.html" border="0" height="1" width="1">
+                <noscript>
+                  <div style="display:inline;">
+                    <img height="1" width="1" style="border-style:none;" alt=""
+                    src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/951716012/?value=1.00&amp;currency_code=USD&amp;label=OiW5COr2yFsQrJHoxQM&amp;guid=ON&amp;script=0"/>
+                  </div>
+                </noscript>
+
+                <!-- Start Alexa Certify Javascript -->
+                <script type="text/javascript">
+                  _atrk_opts = {atrk_acct: "q16Cj1a8gN00iz", domain: "codechef.com", dynamic: true};
+                  (function () {
+                    var as = document.createElement('script');
+                    as.type = 'text/javascript';
+                    as.async = true;
+                    as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js";
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(as, s);
+                  })();
+                </script>
+                <noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=q16Cj1a8gN00iz"
+                 style="display:none" height="1" width="1" alt=""/></noscript>
+                 <!-- End Alexa Certify Javascript -->
+
+                 <div class="cc-footer-seo">
+                  <style scoped="">
+                    .cc-footer-seo table tr th {
+                      font-weight: bold;
+                      font-size: 13px;
+                      border: 0px;
+                      padding-left: 0px;
+                      text-decoration: underline;
+                    }
+
+                    .cc-footer-seo table tr td {
+                      font-size: 12px;
+                      padding-left: 0px;
+                    }
+                  </style>
+                  <span><a href="https://www.codechef.com/">CodeChef</a> - A Platform for Aspiring Programmers</span>
+
+                  <p>CodeChef was created as a platform to help programmers make it big in the world of
+                    algorithms, <strong>computer programming</strong> and <strong>programming
+                    contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a
+                    <strong>programming contest</strong> at the start of the month and another smaller
+                    programming challenge in the middle of the month. We also aim to have training sessions
+                    and discussions related to <strong>algorithms, binary search</strong>, technicalities
+                    like <strong>array size</strong> and the likes. Apart from providing a platform for
+                    <strong>programming competitions</strong>, CodeChef also has various algorithm tutorials
+                    and forum discussions to help those who are new to the world of <strong>computer
+                    programming</strong>.</p>
+
+                    <p></p>
+                    <span><a href="https://www.codechef.com/problems/easy">Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+
+                    <p>Try your hand at one of our many practice problems and submit your solution in a language
+                      of your choice. Our <strong>programming contest</strong> judge accepts solutions in over
+                      35+ programming languages. Preparing for coding contests were never this much fun!
+                      Receive points, and move up through the CodeChef ranks. Use our practice section to
+                      better prepare yourself for the multiple <strong>programming challenges</strong> that
+                      take place through-out the month on CodeChef. </p>
+
+                      <p></p>
+                      <span><a href="https://www.codechef.com/contests/">Compete</a> - Monthly Programming Contests and Cook-offs</span>
+
+                      <p>Here is where you can show off your <strong>computer programming</strong> skills. Take
+                        part in our 10 day long monthly <strong>coding contest</strong> and the shorter format
+                        Cook-off <strong>coding contest</strong>. Put yourself up for recognition and win great
+                        prizes. Our <strong>programming contests</strong> have prizes worth up to INR 20,000
+                        (for Indian Community), $700 (for Global Community) and lots more CodeChef goodies up
+                        for grabs.</p>
+
+                        <p></p><br>
+                        <table border="0" width="60%" cellpadding="5" cellspacing="5">
+                          <tbody><tr>
+                            <th>Programming Tools</th>
+                            <th>Practice Problems</th>
+                            <th>Initiatives</th>
+                          </tr>
+                          <tr>
+                            <td><a href="https://www.codechef.com/ide">Online IDE</a></td>
+                            <td><a href="https://www.codechef.com/problems/easy">Easy</a></td>
+                            <td><a href="http://www.codechef.com/goforgold">Go for Gold</a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="http://www.codechef.com/contests#FurtureContests">Upcoming Coding
+                              Contests</a></td>
+                              <td><a href="https://www.codechef.com/problems/medium">Medium</a></td>
+                              <td><a href="http://www.codechef.com/school">CodeChef for Schools</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="http://www.codechef.com/hostyourcontest">Contest Hosting</a></td>
+                              <td><a href="https://www.codechef.com/problems/hard">Hard</a></td>
+                              <td><a href="http://www.codechef.com/campus_chapter/about">Campus Chapters</a></td>
+                            </tr>
+                            <tr>
+                              <td><a href="http://www.codechef.com/problemsetting">Problem Setting</a></td>
+                              <td><a href="https://www.codechef.com/problems/challenge">Challenge</a></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td><a href="http://www.codechef.com/wiki/tutorials">CodeChef Tutorials</a></td>
+                              <td><a href="https://www.codechef.com/problems/extcontest">Peer</a></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td><a href="https://www.codechef.com/wiki">CodeChef Wiki</a></td>
+                              <td><a href="https://www.codechef.com/problems/school">School</a></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td><a href="https://www.codechef.com/wiki/faq">FAQ's</a></td>
+                              <td></td>
+                            </tr>
+                          </tbody></table>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div id="block-block-48" class="block block-block block-header">
+                        <div class="content">
+                          <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/jquery_006.js"></script>
+                          <script type="text/javascript" src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/contest-notification.js"></script>
+                        </div>
+                      </div>
+                      <div id="block-block-51" class="block block-block block-header">
+                        <div class="content">
+                          <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <script type="text/javascript">
+                    var fb_param = {};
+                    fb_param.pixel_id = '6009000769402';
+                    fb_param.value = '0.00';
+                    (function () {
+                      var fpw = document.createElement('script');
+                      fpw.async = true;
+                      fpw.src = '//connect.facebook.net/en_US/fp.js';
+                      var ref = document.getElementsByTagName('script')[0];
+                      ref.parentNode.insertBefore(fpw, ref);
+                    })();
+                  </script>
+                  <noscript><img height="1" width="1" alt="" style="display:none"
+                   src="https://www.facebook.com/offsite_event.php?id=6009000769402&amp;value=0"/></noscript>
+                 </div>
+               </div>
+             </center>
+             <script>
+
+              var sscache = {};
+              function getPage(url, data, page) {
+                var cacheId = url + JSON.stringify(data);
+                var cache = sscache;
+                var success = function (data) {
+                  cache[cacheId] = data;
+                  $('#rankContentDiv').html(data['content']);
+                  var newpage = page === undefined ? 1 : (parseInt(page) + 1);
+                  var pageinfo = "<div align='center' class='pageinfo'><center> - </center></div>";
+                  if (data['max_page'] > 0) {
+                    pageinfo = "<div align='center' class='pageinfo'><center>" + newpage + " of " + data['max_page'] + "</center></div>";
+                  }
+                  $("#loader").html(pageinfo);
+
+                };
+
+                var error = function (request, errorType) {
+                  try {
+                    if (page === undefined) {
+                      retryButton = '<center><input id="retryButton" type="button" value="Retry"/></center>';
+                      $('#rankContentDiv').html(retryButton);
+                      $('#retryButton').click(function () {
+                        $('#rankContentDiv').html('<p align="center"><img src="/sites/all/themes/abessive/images/ajax-loader.gif" /> Fetching content</p>');
+                        getPage(url, data, page);
+                      });
+                    }
+                    else {
+                      $("#loader").html("<center>Oops! It couldn't load. Try again.</center>");
+                    }
+                  }
+                  catch (e) {
+                  }
+                };
+
+                if (cache.hasOwnProperty(cacheId)) {
+                  success(cache[cacheId]);
+                  return;
+                }
+
+                cAjax({
+                  url: url,
+                  type: "GET",
+                  data: data,
+                  cache: false,
+                  timeout: 10000,
+                  dataType: "json",
+                  success: success,
+                  error: error
+                });
+
+              }
+
+
+              function set_page(element) {
+                var page;
+
+                if (element == "prev")
+                  page = $("#prev_p").val();
+                else if (element == "next")
+                  page = $("#next_p").val();
+
+                return page;
+              }
+
+              function onload_getpage_ssubmissions(element) {
+                $('#loader').html('<p><img src="/misc/ajax_loader_d.gif" style="width: 120px; height:15px;"/></p>');
+                var contest = "";
+                if ($("#ccode").length != 0) {
+                  contest = '&ccode=' + $("#ccode").val();
+                }
+
+                var page = set_page(element);
+                var data = "page=" + page + "&pcode=" + $("#pcode").val() + contest;
+                var url = "/ssubmission/prob";
+                getPage(url, data, page);
+              }
+            </script>
+            <script>
+              var split_count = window.location.pathname.split("/").length;
+              var image = '/Contests/images/Loader-content.gif';
+              if (split_count > 2) {
+                image = '/Contests/images/Problem-Page.gif';
+                document.title = "Problem Page | CodeChef";
+                document.getElementById('content-loader-gif').setAttribute('src', image);
+              }
+            </script>
+            <script>
+              (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:167687,hjsv:5};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+              })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+            </script>
+          
+          
+<div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="Chefland%20and%20Electricity%20%7C%20CodeChef_files/xd_arbiter.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowfullscreen="true" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><iframe style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" allowfullscreen="true" allowtransparency="true" scrolling="no" id="rufous-sandbox" frameborder="0"></iframe><style>
+.snackdown-bar > ul > li:first-child::after{
+    display: none;
+}
+#adfafdasff_wrapper .ccl-padding-s {
+        padding: 0 0 10px;
+    }
+#adfafdasff_wrapper  .ccl-margin-sm {
+        margin: 0 0 15px;
+    }
+ #adfafdasff_wrapper .ccl-align-c {
+        text-align: center;
+    }
+#adfafdasff_wrapper .ccl-font-h2 {
+        font-size: 20px;
+        color: #757575;
+        line-height: 32px;
+    }
+#adfafdasff_wrapper .ccl-border-bottom {
+        border-bottom: 1px solid #cecece;
+    }
+
+#adfafdasff_wrapper .ccl-font-p {
+        font-size: 14px;
+        color: #4f4f4f;
+        line-height: 24px;
+    }
+
+#adfafdasff_wrapper .ccl-margin-m {
+        margin: 0 0 20px;
+    }
+
+    .snackdown-bar{
+    background: #bf4a58;
+    width: 970px;
+    margin: 0 auto 7px;
+    height: 40px;
+    position: relative;
+    top: 126px;
+    margin-top: 12px;
+  }
+  .snackdown-bar *{
+    box-sizing: border-box;
+  }
+  .snackdown-bar .text-medium{
+    font-size: 14px;
+  }
+  .snackdown-bar .text-big{
+    font-size: 18px;
+    position: relative;
+    top: 1px;
+  }
+  .snackdown-bar .text-large{
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    margin: 0 4px;
+  }
+  .snackdown-bar .x-small{
+    font-size: 8px;
+  }
+  .snackdown-bar .text-light{
+    color: #dedede;
+  }
+  .snackdown-bar .logo{
+    float: left;
+    background: #dd4759;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+  }
+  .snackdown-bar .logo img{
+    width: 65px;
+    margin-top: 6px;
+  }
+  .snackdown-bar .refer{
+    float: right;
+    background: #dd4759;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+  }
+@-moz-document url-prefix() {
+     .snackdown-bar .refer a{
+        line-height: 25px;
+     }
+   }
+  .snackdown-bar .refer a{
+    height: 26px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    border: solid 1px #ffffff;
+    font-family: HelveticaNeue-Bold, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #4a4a4a;
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 10px;
+  }
+  .snackdown-bar .refer a:hover{
+    text-decoration: none;
+    box-shadow: none;
+  }
+  .snackdown-bar > ul{
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+  .snackdown-bar > ul > li{
+    list-style-type: none;
+    display: inline;
+    font-family: HelveticaNeue, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 100;
+    line-height: 0.9;
+    position: relative;
+    padding-left: 28px;
+  }
+  .snackdown-bar > ul > li:nth-child(2){
+    margin-right: -46px;
+  }
+  .snackdown-bar > ul > li:nth-child(2)::after{
+    right: 34px;
+  }
+  .snackdown-bar > ul > li::after{
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: -2px;
+    height: 15px;
+    width: 1px;
+    background: #fff;
+  }
+  .snackdown-bar > ul > li em{
+    font-size: 14px;
+    color: #fff;
+  }
+  .snackdown-bar > ul > li span.date{
+    position: relative;
+    top: -8px;
+    border-bottom: 1px solid;
+    padding-bottom: 1px;
+    font-size: 11px;
+  }
+  .snackdown-bar > ul > li span.time{
+    position: relative;
+    top: 6px;
+    left: -48px;
+    font-size: 10px;
+  }
+  .snackdown-bar .timer{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    top: 9px;
+    left: 28px;
+  }
+  .snackdown-bar .timer li{
+    margin-left: 3px;
+    color: #dedede;
+    font-size: 7px;
+    text-transform: capitalize;
+    text-align: center;
+    float: left;
+    display: block;
+    padding-left: 1px;
+    padding-bottom: 0;
+  }
+  .snackdown-bar .timer li span{
+    padding: 4px 0;
+    width: 18px;
+    color: #4a4a4a;
+    font-size: 11px;
+    background: #fff;
+    display: block;
+    text-align: center;
+    line-height: 1;
+    border-radius: 1px;
+    margin-bottom: 2px;
+    margin-top: -3px;
+  }
+</style><script type="text/javascript">
+            if(location.pathname.indexOf('/snackdown') ==0 ||
+                location.pathname.indexOf('/SNCKEL16') == 0 ){
+                    $('.snackdown-bar').hide();
+                }
+            else{
+                    if($('.header-container').length)
+                    { $($('.snackdown-bar')).insertAfter($('.header-container'));
+                    }else if($('header.site').length){
+                        $($('.snackdown-bar')).detach().insertAfter($('header.site'));
+                        $('.snackdown-bar').css('top',0);
+                        $('.snackdown-bar').css('width','964px');
+                        $('.snackdown-bar > ul > li').css('top','-3px');
+                    }
+
+                    $('.snackdown-bar').css('cursor','pointer');
+                    $('.snackdown-bar').click(function(){
+                        window.location = '/SNFL16MR';
+                });$('.snackdown-bar .refer').click(function(){
+            if($('#new-login-form').length){
+                invokeGenericModal({
+                    message: '<div class="ccl-font-h2 ccl-border-bottom ccl-padding-s ccl-margin-sm ccl-align-c"> :( Oops, you are not logged in</div><div class="ccl-font-p ccl-align-c ccl-margin-m">Log-in at the top bar in this page, if you already have a CodeChef account, or <a href="/signup">create a new account</a> if you are new user, to register your team for SnackDown16.</div>',
+                    closeCross: true,
+                    id: 'adfafdasff',
+                    areAllAllowed: true
+                });
+            }else{
+                window.location = '/teams/register/SNFL16MR?utm_source=homebar&utm_medium=banner&utm_campaign=sd';
+            }
+            return false;
+            });
+        var start_date_s = [2016, 07, 09, 12, 00, 00];
+        var contest_text_s = 'Onsite Finale Mirror';
+        var start_date_obj_s = new Date(start_date_s[0], (start_date_s[1] - 1), start_date_s[2], start_date_s[3], start_date_s[4], start_date_s[5]);
+        $(document).ready(function () {
+            $('#clock-text').html(contest_text_s);
+           SGetCount('July 05, 2016 22:08:03');
+
+            function SGetCount(ts) {
+                var time_left = '';
+                current_date_obj = new Date(ts);
+                var diff_in_time1 = start_date_obj_s.getTime() - current_date_obj.getTime();
+
+                var time_left_for_start = [diff_in_time1];
+
+                days = 0;
+                hours = 0;
+                mins = 0;
+                secs = 0;
+                out = '';
+                time_left_for_start[0] = Math.floor(time_left_for_start[0] / 1000);
+                days = Math.floor(time_left_for_start[0] / 86400);
+                time_left_for_start[0] = time_left_for_start[0] % 86400;
+
+                hours = Math.floor(time_left_for_start[0] / 3600);
+                time_left_for_start[0] = time_left_for_start[0] % 3600;
+
+                mins = Math.floor(time_left_for_start[0] / 60);
+                time_left_for_start[0] = time_left_for_start[0] % 60;
+
+                secs = Math.floor(time_left_for_start[0]);
+
+                $('.snackdown-bar #s-clock-day-left').html(String(days));
+                $('.snackdown-bar #s-clock-hrs-left').html(String(hours));
+                $('.snackdown-bar #s-clock-min-left').html(String(mins));
+                $('.snackdown-bar #s-clock-sec-left').html(String(secs));
+
+                nextSec = (current_date_obj.getTime() + 1000);
+                setTimeout(function () {
+                    SGetCount(nextSec)
+                }, 1000);
+            }
+        });
+}
+</script></body></html>
